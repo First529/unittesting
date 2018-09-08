@@ -20,6 +20,7 @@ public class BinarySearch {
 	 */
 	public static <T extends Comparable<? super T>> int binarySearch(T[] array, T element) {
 		// base case
+		if (element == null) throw new IllegalArgumentException("Search element must not be null");
 		if (array.length == 0) return -1;
 		
 		int low = 0, mid = 1, high = array.length - 1;
