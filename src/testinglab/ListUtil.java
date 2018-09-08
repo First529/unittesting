@@ -1,7 +1,7 @@
 package testinglab;
 
 /**
- * 
+ * Find the unique element in the list
  * @author Dechabhol Kotheeranurak
  */
 
