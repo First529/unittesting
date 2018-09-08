@@ -30,9 +30,9 @@ public class ListUtilTest {
 		assertEquals(10_000, ListUtil.countUnique(list));
 	}
 
-	@Test
-	public void testNullValue() {
-		assertEquals( 1, (ListUtil.countUnique(makeList(null, null))));
+	@Test (expected = NullPointerException.class)
+	public void testNullList() {
+		ListUtil.countUnique(null);
 	}
 
 	@Test
